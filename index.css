@@ -40,7 +40,7 @@ button {
     font-weight: bold;
     padding: 10px 30px;
     border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(0, 0, 0, 0.3);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     color: white;
     background-color: orange;
@@ -56,7 +56,7 @@ button:hover {
 }
 
 .color-acento {
-    color: blueviolet;
+    color: orange;
 }
 
 header {
@@ -67,7 +67,7 @@ header .logo {
     margin: 0%;
     padding: 25px 30px;
     font-weight: bold;
-    color: blueviolet;
+    color: orange;
     font-size: 1.6em;
 }
 
@@ -92,7 +92,7 @@ header a {
 }
 
 header a:hover {
-    color: blueviolet;
+    color: orange;
 }
 
 #hero {
@@ -135,7 +135,7 @@ header a:hover {
 }
 
 #Four-reasons .container {
-    padding: 100px 0px;
+    padding: 150px 12px;
 }
 
 #Four-reasons h2 {
@@ -145,13 +145,14 @@ header a:hover {
 
 #Four-reasons p {
     display: none;
+
 }
 
 #Four-reasons .carta {
     background-position: center center;
     background-size: cover;
-    padding: 50px;
-    margin: 20px;
+    padding: 50px 0px;
+    margin: 30px;
     border-radius: 15px;
 }
 
@@ -187,11 +188,11 @@ header a:hover {
 
 #Feeling .container {
     text-align: center;
-    padding: 200px 12px;
+    padding: 250px 12px;
 }
 
 #Feeling li {
-    margin: 15px 0px;
+    margin: 16px 0px;
     font-weight: bold;
 }
 
@@ -229,4 +230,125 @@ footer .container {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+}
+
+@media (min-width: 850px) {
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1 {
+        font-size: 5em;
+    }
+
+    #Colombians .container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #Colombians .texto {
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #Colombians h2 {
+        margin-top: 0%;
+    }
+
+    #Colombians .img-container {
+        background-image: url("media/1.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+
+    }
+
+    #Four-reasons .programs {
+        display: flex;
+        justify-content: center;
+    }
+
+    #Four-seasons p {
+        display: block;
+        margin-bottom: 30%;
+    }
+
+    #Four-seasons h2 {
+        font-size: 4em;
+    }
+
+    #Four-seasons h3 {
+        margin-top: 0%;
+    }
+
+    #Four-seasons .carta {
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position: 0;
+        background-color: rgb(50, 50, 50);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+
+
+    .carta:first-child {
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)),
+            url("media/coffee.jpg");
+
+
+    }
+
+    .carta:nth-child(2) {
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)),
+            url("media/frutas.jpg");
+    }
+
+    .carta:nth-child(3) {
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)),
+            url("media/sopas.jpg");
+    }
+
+    .carta:nth-child(4) {
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)),
+            url("media/empanadas.jpg");
+    }
+
+    #Ready h2 {
+        font-size: 5em
+    }
+
+    #Ready button {
+        font-size: 2em;
+    }
+
+    #footer .container {
+        justify-content: flex-end;
+    }
 }
